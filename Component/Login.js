@@ -19,29 +19,6 @@ const Login = () => {
     return new Promise((resolve) => setTimeout(resolve, 4000));
   }
 
-  // async function login(data) {
-  //   try {
-  //     let res = await axios.post("/api/login", data);
-  //     const response = res.data;
-  //     console.log(response, "to check the data from api to login");
-  //     localStorage.setItem("token", response.data.data);
-  //     notify("User LoggedIn Successfully");
-  //     setError(false);
-  //     setVerify(true);
-  //     setIsLoading(true);
-  //     setLoadingRef(true);
-  //     setTimeout(() => {
-  //       router.push("/dashboard");
-  //     }, 1500);
-  //   } catch (err) {
-  //     console.log(err);
-  //     notifyError("Something Went Wrong");
-  //     setError(true);
-  //     setVerify(false);
-  //     setIsLoading(false);
-  //     setLoadingRef(false);
-  //   }
-  // }
 
   async function formSubmitHandler(event) {
     event.preventDefault();

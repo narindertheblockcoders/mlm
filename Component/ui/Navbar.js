@@ -12,21 +12,6 @@ const Navbar = () => {
   const {data:session} = useSession();
 
 
-  // async function getUserData() {
-  //   let data = await axios.post("api/profile");
-  //   setName(data.data.data);
-  //   // console.log(name,"to show the name")
-  // }
-
-  // useEffect(()=>{
-  //   if(session){
-  // getUserData();
-  //   }
-  //   },[])
-
-  // function logoutHandler() {
-  //   signOut();
-  // }
 
   return (
     <>
@@ -74,43 +59,7 @@ const Navbar = () => {
                       </Link>
                     </li>
                   ) : null}
-                  {/* {session ? (
-                    <li className="nav-item">
-                      <Link href={"/funds"}>
-                        <a
-                          className="nav-link active"
-                          aria-current="page"
-                          href="#"
-                        >
-                          FUNDS
-                        </a>
-                      </Link>
-                    </li>
-                  ) : null} */}
-                    {/* {session ? (
-                    <li className="nav-item">
-                      <Link href={"/stakings"}>
-                        <a
-                          className="nav-link active"
-                          aria-current="page"
-                          href="#"
-                        >
-                          FUNDS
-                        </a>
-                      </Link>
-                    </li>
-                  ) : null} */}
-                  {/* {session ? (
-                    <li className="nav-item">
-                      <a
-                        className="nav-link active"
-                        aria-current="page"
-                        href="#"
-                      >
-                        SETTING
-                      </a>
-                    </li>
-                  ) : null} */}
+               
                   {session ? (
                     <li className="nav-item">
                       <a
@@ -153,19 +102,7 @@ const Navbar = () => {
                 </ul>
               </div>
             </Collapse>
-                  {/* {session ? (
-                    <li className="nav-item">
-                      <Link href={"/login"}>
-                        <button
-                          className="btn btn-outline-success border-btn"
-                          style={{ marginRight: "10px" }}
-                          type="submit"
-                        >
-                          Logout
-                        </button>
-                      </Link>
-                    </li>
-                  ) : null} */}
+
           </div>
         </nav>
       </header>
